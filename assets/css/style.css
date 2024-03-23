@@ -1,0 +1,470 @@
+:root {
+    --nav-family: BioRhyme, serif;
+    --heading-family: Archivo Narrow, sans-serif;
+    --des-family: Zilla Slab, serif;
+
+    --color-red: #dc3545;
+    --color-hover: #bd2130;
+
+    --hr: 1.5px solid red;
+
+    --heading-size: 2.2rem;
+    --heading-size-768: 1.8rem;
+    --heading-size-600: 1.6rem;
+    --heading-size-425: 1.4rem;
+}
+
+::-webkit-scrollbar {
+    /* width: 0.3rem; */
+    display: none;
+}
+
+
+/* ---------------------------------navbar--------------------------------- */
+nav a {
+    font-family: var(--nav-family);
+}
+
+
+nav ul li {
+    padding: 10px 25px;
+    display: flex;
+    justify-content: center;
+}
+
+
+/* ---------------------------------logo--------------------------------- */
+.logo {
+    max-height: 3rem;
+}
+
+/* ---------------------------------slider--------------------------------- */
+.slider-main {
+    width: 100%;
+}
+
+.slider {
+    height: 100%;
+}
+
+
+.slider img {
+    height: 100%;
+    object-fit: contain;
+}
+
+/*--------------------------------- slider- effect ---------------------------------*/
+.carousel-indicators [data-bs-target] {
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    background-color: transparent;
+    border: 1px solid white;
+}
+
+.carousel-indicators button.active {
+    background-color: white;
+}
+
+.slider-btn {
+    margin: 0px 5% 2%;
+}
+
+/*--------------------------------- shop now div--------------------------------- */
+.carousel-caption {
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: start;
+}
+
+/* ---------------------------------shop now button--------------------------------- */
+.shop_now {
+    margin-left: 10%;
+    background-color: transparent;
+    color: white;
+    background-color: white;
+    color: black;
+    padding: 1% 1.5%;
+    font-size: 85%;
+    opacity: 0;
+    animation: fadeInUp 0.5s forwards;
+    animation-delay: 1s;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateX(-70px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* ---------------------------------about us--------------------------------- */
+.about-us-hr,
+.product-hr,
+.store-hr,
+.review hr {
+    border: var(--hr);
+}
+
+.aboutus-head h3,
+.product h3,
+.store h3,
+.review h3 {
+    font-size: var(--heading-size);
+    font-family: var(--heading-family);
+    letter-spacing: 0.25rem;
+    font-weight: 600;
+}
+
+.aboutus-des,
+.product-choice li a,
+.product .btn,
+.features-box .des {
+    font-family: var(--des-family);
+}
+
+.about-us .btn,
+.product .btn {
+    background-color: #dc3545;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    transition: background-color 0.3s;
+}
+
+.about-us .btn:hover,
+.product .btn:hover {
+    background-color: #bd2130;
+}
+
+
+
+/* ---------------------------------product--------------------------------- */
+.product-choice li a {
+    color: grey;
+    font-size: 1.2rem;
+}
+
+.product-choice li a.active {
+    border-bottom: 2px solid #bd2130;
+    color: #bd2130;
+}
+
+.product .card {
+    overflow: hidden;
+    border: 1px solid #efe5e5;
+}
+
+.product .card img:hover {
+    transform: scale(1.15);
+}
+
+
+
+/* ---------------------------------feature--------------------------------- */
+.features-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border: 2px solid black;
+}
+
+
+.features-box img {
+    max-width: 20%;
+}
+
+.features-box p b {
+    font-family: "Archivo Narrow", sans-serif;
+    font-size: 1.5rem;
+}
+
+.features-box:hover {
+    transform: scale(1.12) !important;
+}
+
+
+
+/* ---------------------------------store--------------------------------- */
+.store {
+    background-color: #eae8e2;
+}
+
+.store .box {
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    text-decoration: none;
+}
+
+.store img {
+    height: 5rem;
+}
+
+.store .state {
+    font-family: var(--heading-family);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.store .state span {
+    font-size: 1.2rem;
+}
+
+
+/*----------------------------- review -----------------------------*/
+.full-star {
+    color: rgb(255, 225, 0);
+}
+
+.review-p {
+    font-size: 0.85rem;
+}
+
+.review .box {
+    /* align-items: center; */
+    padding: 0;
+    justify-content: center;
+    margin: 0;
+}
+
+.review .box img {
+    border-radius: 50%;
+    /* width: 5rem; */
+}
+
+.review .box .name {
+    font-weight: bold;
+}
+
+.stars-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+/*--------------------------Footer---------------------------- */
+.footer ul li span {
+    padding: 1% 0.5rem 0 0;
+    font-size: 1rem;
+}
+
+.footer ul li a {
+    color: white;
+}
+
+.footer ul li a:hover {
+    color: var(--color-hover);
+}
+
+.not-hover ul li a:hover {
+    color: white;
+}
+
+.footer ul li {
+    font-size: 1rem;
+}
+
+.footer a img {
+    max-width: 60%;
+}
+
+
+
+
+
+@media screen and (max-width: 768px) {
+
+    /* nav na lables */
+    nav ul li a {
+        font-size: 0.9rem;
+    }
+
+    /* nav na label ni padding */
+    nav ul li {
+        padding: 4px 0px;
+    }
+
+    /* nav nu side vadu button */
+    .navbar-toggler {
+        font-size: 1rem;
+    }
+
+    /* nav no logo */
+    .logo {
+        max-height: 2.5rem;
+    }
+
+    /* slider na dots */
+    .carousel-indicators [data-bs-target] {
+        width: 7px;
+        height: 7px;
+    }
+
+    /* aboutus-heading */
+    .aboutus-head h3,
+    .product h3,
+    .review h3 {
+        font-size: var(--heading-size-768);
+        letter-spacing: 0.15rem;
+    }
+
+    .aboutus-des,
+    .features-box .des {
+        line-height: 21px;
+    }
+
+    .about-us .btn,
+    .product .btn {
+        padding: 0.3rem 0.7rem;
+    }
+
+    /* product */
+    .product-choice li a {
+        font-size: 1rem;
+    }
+
+    /* feature */
+    .features-box p b {
+        font-size: 1.3rem;
+    }
+
+    /* review */
+    .review-p {
+        font-size: 0.65rem;
+    }
+
+    /* footer */
+    .footer ul li {
+        font-size: 0.9rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    /* shop now div */
+    .carousel-caption {
+        padding: 0;
+    }
+
+    /* shop now button */
+    .shop_now {
+        padding: 1% 1.5%;
+        font-size: 50%;
+        margin: 0 0 0 5%;
+    }
+
+    /* aboutus-heading */
+    .aboutus-head h3,
+    .product h3,
+    .review h3 {
+        font-size: var(--heading-size-600);
+        letter-spacing: 0.15rem;
+    }
+
+    .aboutus-des {
+        font-size: 15px;
+    }
+
+    .about-us .btn,
+    .product .btn {
+        padding: 0.2rem 0.5rem;
+    }
+
+    /* product */
+    .product-choice li a {
+        font-size: 0.8rem;
+    }
+
+    /* review */
+    .review-p {
+        font-size: 0.6rem;
+    }
+
+    /* footer */
+    .footer ul li span {
+        font-size: 0.8rem;
+    }
+
+    .footer ul li {
+        font-size: 0.8rem;
+    }
+}
+
+@media screen and (max-width: 425px) {
+
+    /* nav na lables ni size */
+    nav ul li a {
+        font-size: 0.7rem;
+    }
+
+    /* nav na label ni padding */
+    nav ul li {
+        padding: 2px 0px;
+    }
+
+    /* nav nu side vadu button */
+    .navbar-toggler {
+        font-size: 0.8rem;
+    }
+
+    /* nav no logo */
+    .logo {
+        max-height: 2rem;
+    }
+
+    /* slider na dots */
+    .carousel-indicators [data-bs-target] {
+        width: 5px;
+        height: 5px;
+    }
+
+    /* aboutus-heading */
+    .aboutus-head h3,
+    .product h3,
+    .review h3 {
+        font-size: var(--heading-size-425);
+        letter-spacing: 0.15rem;
+    }
+
+    .aboutus-des {
+        font-size: 12px;
+        line-height: 16px;
+        word-spacing: 7px;
+    }
+
+    .about-us .btn,
+    .product .btn {
+        padding: 0.1rem 0.4rem;
+    }
+
+    /* review */
+    .review-p {
+        font-size: 0.55rem;
+    }
+
+    /* footer */
+    .footer ul li span {
+        padding: 1% 0.3rem 0 0;
+    }
+}
+
+
+/* @media screen and (max-width: 425px) and (min-width: 600px) {
+
+} */
